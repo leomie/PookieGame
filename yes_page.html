@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Said Yes!</title>
+    <style>
+        body {
+            font-family: monospace, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #F8E0F7; /* Soft light purple */
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #FF69B4; /* Pink color for the text */
+            margin-top: 120px;
+        }
+        img {
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>I knew you would click yes!</h1>
+    <!-- GIF to show on the new page -->
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjFxOXNnNWk4aHNyYmFta3ByZHJvM3NhbmNzY25pZnIzNmdhM2ZkZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lvWqc9gbU46kqDPtW6/giphy.gif" alt="Yes Image">
+
+    <audio id ="yesAudio" src="ramattra.mp3" autoplay></audio>
+
+    <script>
+        const yesAudio = document.getElementById("yesAudio");
+
+        yesAudio.play().catch((error) => {
+            console.error("Audio fail");
+        });
+    </script>
+</body>
+</html>
